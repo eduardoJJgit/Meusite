@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ajusta a altura para ocupar a tela inteira */
+}
+
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%; /* Largura responsiva */
+    max-width: 800px; /* Limita a largura máxima */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+.confirmado {
+    color: black;
+    background-color: rgb(17, 255, 0);
+}
+
+.NaoConfirmado {
+    color: black;
+    background-color: red;
+}
+
+/* Media Queries para ajustes em diferentes tamanhos de tela */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2em; /* Aumenta o tamanho da fonte em telas pequenas */
+    }
+
+    th, td {
+        padding: 8px; /* Ajusta o padding em telas pequenas */
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        font-size: 1em; /* Diminui o tamanho da fonte em telas muito pequenas */
+    }
+
+    th, td {
+        padding: 5px; /* Reduz ainda mais o padding */
+    }
+}
